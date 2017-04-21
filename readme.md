@@ -7,10 +7,7 @@ Two containers: Nginx + MySQL.
 
 * edit config.rb
 
-* build all images
-```
-docker-builder build
-```
+* since we use base images for nginx and mysql from docker repository - building of images is not needed
 
 * run containers
 ```
