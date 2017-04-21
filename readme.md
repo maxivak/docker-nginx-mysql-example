@@ -1,4 +1,7 @@
-Build and run Docker containers with docker-builder
+Build and run Docker containers with [docker-builder](https://github.com/maxivak/docker-builder).
+
+Two containers: Nginx + MySQL.
+
 
 # Quickstart
 
@@ -19,4 +22,6 @@ it will run Docker containers for nginx and mysql
 
 
 # Configuration
+
+edit config.rb
 

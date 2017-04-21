@@ -9,22 +9,21 @@ service_prefix ''
 server 'mysql' do |s|
 
   s.build = {
-               'build_type' => 'none',
-
-               "base_image" => {"name" => "mysql", "repository" => "mysql", "tag" => "5.7.15" },
-                 }
+     'build_type' => 'none',
+     "base_image" => {"name" => "mysql", "repository" => "mysql", "tag" => "5.7.15" },
+  }
 
   s.docker = {
-                 #"command"=> "",
-                 'volumes' => [
-                     ['data','/var/lib/mysql']
-                 ],
-                 'links' => [],
-                 'run_env'=>[
-                     ['MYSQL_ROOT_PASSWORD', 'mypass']
-                 ],
+       #"command"=> "",
+       'volumes' => [
+           ['data','/var/lib/mysql']
+       ],
+       'links' => [],
+       'run_env'=>[
+           ['MYSQL_ROOT_PASSWORD', 'mypass']
+       ],
 
-                 'run_options'=>'',
+       'run_options'=>'',
   }
 
   s.attributes = { }
