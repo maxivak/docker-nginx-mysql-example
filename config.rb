@@ -48,7 +48,7 @@ server 'nginx' do |s|
       'command' => "",
 
       'volumes' => [
-          ['./nginx/nginx.conf', '/etc/nginx/nginx.conf'],
+          ['./files/nginx.conf', '/etc/nginx/nginx.conf'],
           #['sites-enabled', '/etc/nginx/sites-enabled/'],
           #['sites-available', '/etc/nginx/sites-available/'],
 
